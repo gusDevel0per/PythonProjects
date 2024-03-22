@@ -1,0 +1,7 @@
+nome = input("digite um nome: ")
+idade = input("Digite a sua idade: ")
+alture = float(input("Digite a tua altura: ")
+print("Seu nome é {} e tem {} anos".format(nome,idade))
+print(f"seu nome é {nome}, tem {idade} anos e altura de {}")
+print("Seu nome é %s e tem %s" %(nome, idade))
+print("Seu nome é "+nome+ " e tem "+idade+ " Anos") 
