@@ -9,6 +9,7 @@ class Conta:
         self.-titular = cliente
         self._saldo = saldo
         self._limite = limite
+        self._historico = historico()
     @property
     def saldo(self):
         return self._saldo
@@ -29,8 +30,9 @@ class Conta:
     def saca(self,valor):
         if (self._saldo<valor) or (self._limite<valor):
             return False
-        else?
+        else:
             self._saldo -= valor
+            self.historico.transacoes.append(f"Retirou o valor {valor}, o saldo agora é {self._saldo()}.")
     
     def extrato(self):
         return self.saldo
